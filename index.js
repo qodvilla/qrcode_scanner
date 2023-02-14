@@ -18,12 +18,16 @@ Html5Qrcode.getCameras().then(devices => {
         },
         (decodedText, decodedResult) => {
           // do something when code is read
+          alert("code decoded: ", decodedText);
         },
         (errorMessage) => {
           // parse error, ignore it.
+          alert("something went wrong")
         })
       .catch((err) => {
         // Start failed, handle it.
+        console.log(err);
+        alert("Error starting camera.")
       });
     }
   }).catch(err => {
