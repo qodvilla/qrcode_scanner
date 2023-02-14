@@ -22,7 +22,9 @@ Html5Qrcode.getCameras().then(devices => {
         },
         (errorMessage) => {
           // parse error, ignore it.
-          alert("something went wrong")
+          alert("error")
+          alert(errorMessage)
+
         })
       .catch((err) => {
         // Start failed, handle it.
