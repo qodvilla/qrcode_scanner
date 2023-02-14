@@ -1,6 +1,6 @@
 function onScanSuccess(decodedText, decodedResult) {
     // handle the scanned code as you like, for example:
-    console.log(`Code matched = ${decodedText}`, decodedResult);
+    alert(`Code matched = ${decodedText}`, decodedResult);
   }
   
   function onScanFailure(error) {
@@ -13,5 +13,4 @@ function onScanSuccess(decodedText, decodedResult) {
     "reader",
     { fps: 10, qrbox: {width: 250, height: 250} },
     /* verbose= */ false);
-    console.log(html5QrcodeScanner, "yeah?")
   html5QrcodeScanner.render(onScanSuccess, onScanFailure);
