@@ -1,7 +1,7 @@
 const get = async () => {
     const response = await fetch("https://swapi.dev/api/people/1/");
     const data = await response.json();
-    alert(data);
+    alert(data.name);
 }
 
 function onScanSuccess(decodedText, decodedResult) {
